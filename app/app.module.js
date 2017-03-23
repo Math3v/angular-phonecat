@@ -8,15 +8,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var static_1 = require("@angular/upgrade/static");
 var AppModule = (function () {
     function AppModule() {
     }
+    AppModule.prototype.ngDoBootstrap = function () { };
     return AppModule;
 }());
 AppModule = __decorate([
     core_1.NgModule({
         imports: [
             platform_browser_1.BrowserModule,
+            static_1.UpgradeModule
         ],
     })
 ], AppModule);

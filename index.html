@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en" ng-app="phonecatApp">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Google Phone Gallery</title>
+
+    <base href="/app/">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="app.css" />
     <link rel="stylesheet" href="app.animations.css" />
-
-    <base href="/app/">
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
@@ -31,7 +31,7 @@
     <script src="/node_modules/systemjs/dist/system.src.js"></script>
     <script src="/systemjs.config.js"></script>
     <script>
-      System.import('/app');
+      System.import('/app/main.js');
     </script>
   </head>
   <body>
