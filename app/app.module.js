@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var static_1 = require("@angular/upgrade/static");
+var phone_name_component_1 = require("./phone-name/phone-name.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -21,6 +22,12 @@ AppModule = __decorate([
             platform_browser_1.BrowserModule,
             static_1.UpgradeModule
         ],
+        declarations: [
+            phone_name_component_1.PhoneNameComponent
+        ],
+        entryComponents: [
+            phone_name_component_1.PhoneNameComponent
+        ]
     })
 ], AppModule);
 exports.AppModule = AppModule;

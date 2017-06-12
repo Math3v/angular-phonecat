@@ -4,7 +4,7 @@
       ng-repeat="img in $ctrl.phone.images" />
 </div>
 
-<h1>{{$ctrl.phone.name}}</h1>
+<phone-name [name]="$ctrl.phone.name"></phone-name>
 
 <p>{{$ctrl.phone.description}}</p>
 
