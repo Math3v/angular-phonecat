@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 declare const angular: any;
 import { downgradeComponent } from '@angular/upgrade/static';
 
@@ -8,12 +8,8 @@ import { downgradeComponent } from '@angular/upgrade/static';
     <h1>{{ name }}</h1>
   `
 })
-export class PhoneNameComponent implements OnInit {
+export class PhoneNameComponent {
   @Input() name: string;
-
-  ngOnInit() {
-    console.log('Phone name initialized ' + this.name );
-  }
 }
 
 angular.
