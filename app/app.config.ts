@@ -7,7 +7,6 @@ angular.
       $locationProvider: angular.ILocationProvider,
       $routeProvider: angular.route.IRouteProvider
       ) {
-      //$locationProvider.hashPrefix('!');
       $locationProvider.html5Mode( true );
 
       $routeProvider.
