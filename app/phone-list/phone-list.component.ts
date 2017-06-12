@@ -3,11 +3,13 @@ class PhoneListController {
   orderProp: string;
   query: string;
 
-  static $inject = ['Phone'];
+  static $inject = ['Phone', 'PhoneService'];
 
-  constructor(Phone: any) {
-    this.phones = Phone.query();
+  constructor(Phone: any, phoneService: any) {
     this.orderProp = 'age';
+    phoneService.getPhones().subscribe(response => {
+      this.phones = response.json();
+    })
   }
 }
 
