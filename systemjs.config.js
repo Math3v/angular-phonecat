@@ -41,6 +41,7 @@
       rxjs: {
         defaultExtension: 'js'
       }
-    }
+    },
+    defaultJSExtensions: true
   });
 })(this);
