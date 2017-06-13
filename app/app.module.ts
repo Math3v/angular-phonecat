@@ -7,6 +7,8 @@ import { PhoneNameComponent } from './phone-name/phone-name.component';
 import { PhoneDetailComponent } from './ng-phone-detail/ng-phone-detail.component';
 import { PhoneService } from './core/phone/ng-phone.service';
 
+import { phoneServiceProvider } from './ajs-upgraded-providers';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -22,7 +24,8 @@ import { PhoneService } from './core/phone/ng-phone.service';
     PhoneDetailComponent
   ],
   providers: [
-    PhoneService
+    PhoneService,
+    phoneServiceProvider
   ]
 })
 export class AppModule {
