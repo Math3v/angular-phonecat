@@ -4,6 +4,7 @@ import { UpgradeModule } from '@angular/upgrade/static';
 import { HttpModule } from '@angular/http';
 
 import { PhoneNameComponent } from './phone-name/phone-name.component';
+import { PhoneDetailComponent } from './ng-phone-detail/ng-phone-detail.component';
 import { PhoneService } from './core/phone/ng-phone.service';
 
 @NgModule({
@@ -13,10 +14,12 @@ import { PhoneService } from './core/phone/ng-phone.service';
     HttpModule
   ],
   declarations: [
-    PhoneNameComponent
+    PhoneNameComponent,
+    PhoneDetailComponent
   ],
   entryComponents: [
-    PhoneNameComponent
+    PhoneNameComponent,
+    PhoneDetailComponent
   ],
   providers: [
     PhoneService
