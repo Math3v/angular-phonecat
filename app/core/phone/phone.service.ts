@@ -1,4 +1,4 @@
-export class PhoneService {
+export class Phone {
 
   resource: angular.resource.IResourceService;
   
@@ -8,7 +8,7 @@ export class PhoneService {
     this.resource = $resource;
   }
 
-  get() {
+  getPhoneResource() {
     return this.resource('phones/:phoneId.json', {}, {
       query: {
         method: 'GET',
