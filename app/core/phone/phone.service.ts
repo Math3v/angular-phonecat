@@ -1,4 +1,4 @@
-class PhoneService {
+export class PhoneService {
 
   resource: angular.resource.IResourceService;
   
@@ -18,9 +18,3 @@ class PhoneService {
     });
   }
 }
-
-angular.
-  module('core.phone').
-  factory('Phone', ['$resource', function($resource) {
-    return new PhoneService($resource).get();
-  }]);
