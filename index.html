@@ -31,15 +31,24 @@
     <script src="/tsc-output/phone-detail/phone-detail.module.js"></script>
     <script src="/tsc-output/phone-detail/phone-detail.component.js"></script>
 
+    <script src="/tsc-output/ngjs-dropdown-select/ngjs-dropdown-select.module.js"></script>
+    <script src="/tsc-output/ngjs-dropdown-select/ngjs-dropdown-select.component.js"></script>
+
     <script>
       System.import('/tsc-output/main.js');
     </script>
   </head>
   <body>
 
+    <header ng-controller="MainController">
+      <ngjs-dropdown-select on-item-clicked="dummy"></ngjs-dropdown-select>
+    </header>
+
     <div class="view-container">
       <div ng-view class="view-frame"></div>
     </div>
 
+
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
   </body>
 </html>
