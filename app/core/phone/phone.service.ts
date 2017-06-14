@@ -2,8 +2,6 @@ export class Phone {
 
   resource: angular.resource.IResourceService;
   
-  static $inject = ['$resource'];
-
   constructor($resource: angular.resource.IResourceService) {
     this.resource = $resource;
   }
