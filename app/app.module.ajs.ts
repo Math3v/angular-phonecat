@@ -7,5 +7,5 @@ angular.module('phonecatApp', [
   'core',
   'phoneDetail',
   'phoneList',
-  'ngjsDropdownSelectModule'
+  'dropdownSelectModule'
 ]);

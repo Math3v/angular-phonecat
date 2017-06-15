@@ -32,7 +32,7 @@ export class NgDropdownSelectComponent implements OnChanges {
 }
 
 angular.
-  module('ngjsDropdownSelectModule').
+  module('dropdownSelectModule').
   directive(
     'ngDropdownSelect',
     downgradeComponent({

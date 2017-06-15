@@ -1,4 +1,4 @@
-angular.module('ngjsDropdownSelectModule')
+angular.module('dropdownSelectModule')
   .directive('ngjsDropdownSelect', function() {
     return {
       restrict: 'E',

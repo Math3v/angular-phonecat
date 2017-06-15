@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('ngjsDropdownSelectModule', []);
+angular.module('dropdownSelectModule', []);
