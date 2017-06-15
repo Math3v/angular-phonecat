@@ -8,6 +8,7 @@ import { PhoneDetailComponent } from './ng-phone-detail/ng-phone-detail.componen
 import { PhoneService } from './core/phone/ng-phone.service';
 
 import { phoneServiceProvider } from './ajs-upgraded-providers';
+import { NgDropdownSelectComponent } from './ng-dropdown-select/ng-dropdown-select.component';
 
 @NgModule({
   imports: [
@@ -17,11 +18,13 @@ import { phoneServiceProvider } from './ajs-upgraded-providers';
   ],
   declarations: [
     PhoneNameComponent,
-    PhoneDetailComponent
+    PhoneDetailComponent,
+    NgDropdownSelectComponent
   ],
   entryComponents: [
     PhoneNameComponent,
-    PhoneDetailComponent
+    PhoneDetailComponent,
+    NgDropdownSelectComponent
   ],
   providers: [
     PhoneService,
