@@ -19,7 +19,7 @@ import { downgradeComponent } from '@angular/upgrade/static';
 })
 export class NgDropdownSelectComponent implements OnChanges {
   @Input() items: Array<any>;
-  @Output() clicked: EventEmitter<any> = new EventEmitter();
+  @Output() onItemClicked: EventEmitter<any> = new EventEmitter();
 
   ngOnChanges(changes: SimpleChanges) {
     console.table(changes.items.currentValue);
@@ -27,7 +27,7 @@ export class NgDropdownSelectComponent implements OnChanges {
 
   private itemClicked( item: any ) {
     console.log( 'Inner click ', item );
-    this.clicked.emit( item );
+    this.onItemClicked.emit( item );
   }
 }
 
@@ -38,6 +38,6 @@ angular.
     downgradeComponent({
       component: NgDropdownSelectComponent,
       inputs: ['items'],
-      outputs: ['clicked']
+      outputs: ['onItemClicked']
     }) as angular.IDirectiveFactory
   );
