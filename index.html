@@ -41,7 +41,10 @@
   <body>
 
     <header ng-controller="MainController">
-      <ngjs-dropdown-select on-item-clicked="dummy"></ngjs-dropdown-select>
+      <ngjs-dropdown-select
+        on-item-clicked="dummy"
+        items="items">
+      </ngjs-dropdown-select>
     </header>
 
     <div class="view-container">
